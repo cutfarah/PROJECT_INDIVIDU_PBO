@@ -31,3 +31,14 @@ public class Penumpang {
     public void kurangiSaldo(int jumlah) {
         saldo -= jumlah;
     }
+
+  // Cek apakah penumpang masuk kategori prioritas
+    public boolean isPrioritas() {
+        return umur > 60 || umur < 10 || hamil;
+    }
+
+    @Override
+    public String toString() {
+        return nama + " (ID: " + id + ")";
+    }
+}
