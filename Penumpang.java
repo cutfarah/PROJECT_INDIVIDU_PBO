@@ -21,3 +21,13 @@ public class Penumpang {
     public int getUmur() { return umur; }
     public boolean isHamil() { return hamil; }
     public int getSaldo() { return saldo; }
+
+  // Menambah saldo dompet penumpang
+    public void tambahSaldo(int jumlah) {
+        saldo += jumlah;
+    }
+
+    // Mengurangi saldo saat membayar
+    public void kurangiSaldo(int jumlah) {
+        saldo -= jumlah;
+    }
