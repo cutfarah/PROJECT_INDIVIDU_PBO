@@ -14,3 +14,10 @@ public class Penumpang {
         this.hamil = hamil;
         this.saldo = 10000; // saldo awal
     }
+
+     // Getter data penumpang
+    public int getId() { return id; }
+    public String getNama() { return nama; }
+    public int getUmur() { return umur; }
+    public boolean isHamil() { return hamil; }
+    public int getSaldo() { return saldo; }
