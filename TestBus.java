@@ -59,3 +59,17 @@ public class TestBus {
                 case 3:
                     System.out.println(bus.toString());
                     break;
+
+                           // Keluar dari program
+                case 4:
+                    jalan = false;
+                    break;
+
+                default:
+                    System.out.println("Pilihan tidak valid.");
+            }
+        }
+
+        in.close();
+    }
+}
