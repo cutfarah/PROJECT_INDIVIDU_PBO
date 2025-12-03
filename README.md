@@ -1,5 +1,6 @@
 # PROJECT_INDIVIDU_PBO (BUS TRANS KOETARADJA)
 Program ini merupakan simulasi sederhana pengelolaan penumpang pada Bus Trans Koetaradja menggunakan bahasa pemrograman Java. Sistem memungkinkan pengguna menambahkan penumpang, menurunkan penumpang, serta melihat kondisi bus melalui menu interaktif. Seluruh logika penempatan penumpang mengikuti aturan yang telah ditetapkan mengenai kursi prioritas, kursi biasa, dan area berdiri.
+
 **1. Deskripsi Program**
 
 Program ini mengatur tiga jenis area dalam bus: kursi prioritas (4 tempat), kursi biasa (16 tempat), dan area berdiri (20 tempat). Ketika ada penumpang yang ingin naik, program akan mengevaluasi usia dan status hamil untuk menentukan apakah ia termasuk kategori prioritas. Penumpang yang memenuhi kategori ini akan ditempatkan terlebih dahulu di kursi prioritas, kemudian dialihkan ke kursi biasa jika penuh, dan terakhir ke area berdiri apabila seluruh kursi telah terisi. Penumpang biasa akan diarahkan ke kursi biasa atau area berdiri sesuai ketersediaan.
