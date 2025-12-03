@@ -1,16 +1,17 @@
 # PROJECT_INDIVIDU_PBO
 **1. Deskripsi Program**
+
 Program ini mengatur tiga jenis area dalam bus: kursi prioritas (4 tempat), kursi biasa (16 tempat), dan area berdiri (20 tempat). Ketika ada penumpang yang ingin naik, program akan mengevaluasi usia dan status hamil untuk menentukan apakah ia termasuk kategori prioritas. Penumpang yang memenuhi kategori ini akan ditempatkan terlebih dahulu di kursi prioritas, kemudian dialihkan ke kursi biasa jika penuh, dan terakhir ke area berdiri apabila seluruh kursi telah terisi. Penumpang biasa akan diarahkan ke kursi biasa atau area berdiri sesuai ketersediaan.
 Setiap penumpang memiliki saldo awal sebesar Rp10.000. Untuk naik bus, penumpang harus membayar ongkos Rp2.000. Jika saldo tidak mencukupi, penumpang tidak dapat naik bus. Selain itu, setiap kali transaksi berhasil dilakukan, pendapatan bus akan bertambah.
 
 **2. Fitur Utama**
-**Naikkan Penumpang**
+- **Naikkan Penumpang**
 Pengguna dapat memasukkan data penumpang (nama, umur, dan status hamil). Sistem akan memeriksa saldo dan menentukan kategori penempatan berdasarkan aturan yang berlaku.
 
-**Turunkan Penumpang**
+- **Turunkan Penumpang**
 Sistem dapat menghapus penumpang berdasarkan nama dari salah satu dari tiga area dalam bus.
 
-**Lihat Daftar Penumpang**
+- **Lihat Daftar Penumpang**
 Menampilkan jumlah penumpang di kursi prioritas, kursi biasa, area berdiri, serta pendapatan total bus.
 
 **3. Struktur Kelas**
