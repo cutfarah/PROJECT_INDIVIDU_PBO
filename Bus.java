@@ -7,3 +7,12 @@ public class Bus {
 
     private final int ONGKOS = 2000;
     private int totalPendapatan = 0;
+
+    // Hitung isi array untuk mendapatkan jumlah penumpang
+    private int hitungIsi(Penumpang[] arr) {
+        int count = 0;
+        for (Penumpang p : arr) {
+            if (p != null) count++;
+        }
+        return count;
+    }
