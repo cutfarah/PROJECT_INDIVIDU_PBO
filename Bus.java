@@ -16,3 +16,14 @@ public class Bus {
         }
         return count;
     }
+
+  // Menempatkan penumpang pada array pertama yang kosong
+    private boolean tambahKeArray(Penumpang[] arr, Penumpang p) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null) {
+                arr[i] = p;
+                return true;
+            }
+        }
+        return false;
+    }
