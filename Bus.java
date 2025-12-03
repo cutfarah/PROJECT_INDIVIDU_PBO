@@ -27,3 +27,23 @@ public class Bus {
         }
         return false;
     }
+
+   // Proses menaikkan penumpang ke dalam bus
+    public boolean naikkanPenumpang(Penumpang p) {
+
+        if (p.getSaldo() < ONGKOS) {
+            System.out.println("Saldo tidak cukup.");
+            return false;
+        }
+
+        // Urutan tempat untuk prioritas
+        if (p.isPrioritas()) {
+            if (tambahKeArray(penumpangPrioritas, p) ||
+                tambahKeArray(penumpangBiasa, p) ||
+                tambahKeArray(penumpangBerdiri, p)) {
+
+                p.kurangiSaldo(ONGKOS);
+                totalPendapatan += ONGKOS;
+                return true;
+            }
+        }
