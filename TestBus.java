@@ -54,3 +54,8 @@ public class TestBus {
                         System.out.println("Tidak ditemukan.");
                     }
                     break;
+
+                           // Menampilkan kondisi bus
+                case 3:
+                    System.out.println(bus.toString());
+                    break;
