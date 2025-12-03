@@ -42,3 +42,15 @@ public class TestBus {
                         System.out.println("Gagal menaikkan penumpang.");
                     }
                     break;
+
+                           // Mengeluarkan penumpang
+                case 2:
+                    System.out.print("Nama penumpang yang turun: ");
+                    String turun = in.nextLine();
+
+                    if (bus.turunkanPenumpang(turun)) {
+                        System.out.println("Penumpang turun.");
+                    } else {
+                        System.out.println("Tidak ditemukan.");
+                    }
+                    break;
