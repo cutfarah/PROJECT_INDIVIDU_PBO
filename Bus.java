@@ -47,3 +47,18 @@ public class Bus {
                 return true;
             }
         }
+
+           // Urutan tempat untuk penumpang biasa
+        else {
+            if (tambahKeArray(penumpangBiasa, p) ||
+                tambahKeArray(penumpangBerdiri, p)) {
+
+                p.kurangiSaldo(ONGKOS);
+                totalPendapatan += ONGKOS;
+                return true;
+            }
+        }
+
+        System.out.println("Tempat sudah penuh.");
+        return false;
+    }
