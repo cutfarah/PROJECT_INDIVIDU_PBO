@@ -81,3 +81,11 @@ public class Bus {
         return false;
     }
 
+   @Override
+    public String toString() {
+        return "Jumlah Prioritas: " + hitungIsi(penumpangPrioritas) +
+               "\nJumlah Biasa    : " + hitungIsi(penumpangBiasa) +
+               "\nJumlah Berdiri  : " + hitungIsi(penumpangBerdiri) +
+               "\nTotal Pendapatan: " + totalPendapatan;
+    }
+}
