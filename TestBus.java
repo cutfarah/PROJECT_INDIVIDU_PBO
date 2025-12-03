@@ -19,3 +19,26 @@ public class TestBus {
 
             int pilih = in.nextInt();
             in.nextLine(); // membersihkan newline
+
+                   switch (pilih) {
+
+                // Menambah penumpang baru
+                case 1:
+                    System.out.print("Nama : ");
+                    String nama = in.nextLine();
+
+                    System.out.print("Umur : ");
+                    int umur = in.nextInt();
+                    in.nextLine();
+
+                    System.out.print("Hamil (y/n): ");
+                    boolean hamil = in.nextLine().equalsIgnoreCase("y");
+
+                    Penumpang p = new Penumpang(nextId++, nama, umur, hamil);
+
+                    if (bus.naikkanPenumpang(p)) {
+                        System.out.println("Penumpang berhasil naik.");
+                    } else {
+                        System.out.println("Gagal menaikkan penumpang.");
+                    }
+                    break;
